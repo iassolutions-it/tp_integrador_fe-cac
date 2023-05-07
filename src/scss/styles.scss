@@ -1,0 +1,49 @@
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+nav, #place-description {
+    background-color: rgb(24, 25, 27);
+}
+
+/* The hero image */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/ba1.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Placing the image */
+  .hero-text {
+    text-align: right;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-30%, -50%);
+    color: white;
+  }
+
+  .btn-transp{
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-white);
+    --bs-btn-border-color: white;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color(rgba(171, 171, 171, 0.341), 10%)};
+    --bs-btn-hover-border-color: #{shade-color(white, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-white-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color(white, 20%)};
+    --bs-btn-active-border-color: #{shade-color(white, 20%)};
+  }
+  #dashed {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+  }
+
+  #footer-nav{
+    background: rgb(29,55,68);
+    background: linear-gradient(90deg, rgba(29,55,68,1) 0%, rgba(29,69,94,1) 32%, rgba(38,110,152,1) 100%);
+  }
