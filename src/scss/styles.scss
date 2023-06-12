@@ -86,6 +86,17 @@ nav, #place-description {
   background-color: rgb(158, 198, 233);
 }
 
+.img-main {
+  background-image: url("../assets/img/honolulu.jpg");
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-right: 1px solid white;
+}
+
 @media (max-width:992px){
   .hero-image {
     height: 450px;
@@ -102,6 +113,42 @@ nav, #place-description {
   .hero-text {
     text-align: left;
     top: 55%;
-    left: 30%;    
+    left: 30%;
+    & p{
+      display: none;      
+    }    
+    button {
+      margin: .5em 0;
+    }
   }
+}
+
+.central-show{
+  background-color: rgb(24, 25, 27);
+  color: #fff;
+
+  .card-main{
+    padding: 2em 4em;
+    margin-bottom: 1em;
+  }
+  .card-main-title, .card-main-text{
+    margin-bottom: 1.5em;
+  } 
+  .card-main-text {
+    width: 90%;
+  }
+  
+}
+@media (max-width:1600px){
+  main {
+    //background-color: rgb(24, 25, 27);
+    //justify-content: center;
+    //align-items: center;
+    //padding: 1em auto;
+  
+     div:nth-child(2){
+      
+    }
+  }
+
 }
