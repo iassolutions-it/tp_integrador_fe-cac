@@ -6,6 +6,7 @@ const root = resolve(__dirname, 'src')
 const outDir = resolve(__dirname, 'dist')
 
 export default defineConfig({
+  base: '/tp_integrador_fe-cac/',
   root,
   build: {
     outDir,
