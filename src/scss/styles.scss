@@ -5,6 +5,12 @@
 nav, #place-description {
     background-color: rgb(24, 25, 27);
 }
+.btn-comprar {
+  color: rgb(25, 135, 84);
+}
+.btn-comprar:hover{
+  color: rgb(89, 211, 154);
+}
 
 /* The hero image */
 .hero-image {
@@ -47,3 +53,55 @@ nav, #place-description {
     background: rgb(29,55,68);
     background: linear-gradient(90deg, rgba(29,55,68,1) 0%, rgba(29,69,94,1) 32%, rgba(38,110,152,1) 100%);
   }
+
+.c-body{
+  margin: auto;
+}
+.card-conf {
+  max-width: 15em;
+  min-width: 15rem;
+  min-height: 15rem;
+  margin: .2em;
+  
+  .c-title, .c-disc {
+    margin-top: 2em;
+    font-weight: bold;
+  }
+  .req-doc {
+    font-size: small;
+    font-weight: lighter;
+    margin-bottom: 2em;
+  }
+}
+.card-est {
+  border: 1px solid blue;
+}
+.card-trai {
+  border: 1px solid green;
+}
+.card-jun {
+  border: 1px solid rgb(208, 163, 29);
+}
+#total {
+  background-color: rgb(158, 198, 233);
+}
+
+@media (max-width:992px){
+  .hero-image {
+    height: 450px;
+  }
+  .hero-text {
+    text-align: right;
+    top: 40%;
+    left: 20%;
+    transform: translate(-10%, -50%);
+  }
+}
+@media (max-width:600px){
+  
+  .hero-text {
+    text-align: left;
+    top: 55%;
+    left: 30%;    
+  }
+}
