@@ -1,13 +1,24 @@
-const path = require('path')
 
-export default {
-  root: path.resolve(__dirname, 'src'),
-  base: '/tp_integrador_fe-cac/',
+import { resolve } from 'path'
+import { defineConfig } from 'vite'
+
+const root = resolve(__dirname, 'src')
+const outDir = resolve(__dirname, 'dist')
+
+export default defineConfig({
+  root,
   build: {
-    outDir: '../dist',
+    outDir,
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: resolve(root, 'index.html'),
+        tickets: resolve(root, 'tickets.html'),
+      },
+    },
   },
   server: {
     port: 8080,
     hot: true
   }
-}
+})
